@@ -1,3 +1,7 @@
+# Author:  Tuan Dang   
+# Email:   tuan.dang@uta.edu, dangthanhtuanit@gmail.com
+# Copyright (c) 2024 Tuan Dang, all rights reserved
+
 from torch import Tensor, diag
 from torch.linalg import inv
 import torch

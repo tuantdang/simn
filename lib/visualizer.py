@@ -1,3 +1,7 @@
+# Author:  Tuan Dang   
+# Email:   tuan.dang@uta.edu, dangthanhtuanit@gmail.com
+# Copyright (c) 2024 Tuan Dang, all rights reserved
+
 import open3d as o3d
 from torch import tensor
 import time
