@@ -1,0 +1,4 @@
+Start logging at 2025-02-26 13:06:50
+File /home/tuandang/workspace/datasets/tum/extract/rgbd_dataset_freiburg3_long_office_household/depth.txt containts 2509 images
+File /home/tuandang/workspace/datasets/tum/extract/rgbd_dataset_freiburg3_long_office_household/rgb.txt containts 2585 images
+Cache at /home/tuandang/workspace/datasets/tum/extract/rgbd_dataset_freiburg3_long_office_household/cached was built previously! Just use it!

@@ -1,0 +1,554 @@
+Start logging at 2025-02-22 18:04:42
+Building cache for 69 frame
+Build cache for 69 frames done!
+FrameId=0:  cached_time=3.3 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 111425, --cropped--> 111424
+  Sampling->dist_sampling: pc=torch.Size([111424, 6]) -> sampled_points=torch.Size([557120, 6]) time= 1.67 ms
+  LatentFeature->update: samples=557120, new_points=23879 (closreSur>VoxDwn>Radius>Distance), all_points=23879
+  TrainingPool->update: Nvs=557120 ->  close_surface_sample_idx=334189, all_points=557120, increasement: 0
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([334189])
+  TrainingPool->train: break at iter=104, cur_mean_loss=0.800131, mean_loss=0.800222, diff=-0.000091, thres=0.000100
+FrameId=1:  cached_time=2.7 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 112880, --cropped--> 112879
+  Registration->register: reg_points=torch.Size([7770, 6]), translation=tensor([0., 0., 0.], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([112879, 6]) -> sampled_points=torch.Size([564395, 6]) time= 0.83 ms
+  LatentFeature->update: samples=564395, new_points=23238 (closreSur>VoxDwn>Radius>Distance), all_points=47117
+  TrainingPool->update: Nvs=564395 ->  close_surface_sample_idx=335259, all_points=1121515, increasement: 557120
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([335259])
+  TrainingPool->train: break at iter=75, cur_mean_loss=0.793765, mean_loss=0.793836, diff=-0.000070, thres=0.000100
+FrameId=2:  cached_time=2.7 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 113584, --cropped--> 113583
+  Registration->register: reg_points=torch.Size([7682, 6]), translation=tensor([ 0.0014,  0.0022, -0.0133], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([113583, 6]) -> sampled_points=torch.Size([567915, 6]) time= 0.99 ms
+  LatentFeature->update: samples=567915, new_points=23411 (closreSur>VoxDwn>Radius>Distance), all_points=70528
+  TrainingPool->update: Nvs=567915 ->  close_surface_sample_idx=337302, all_points=1689430, increasement: 1121515
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([337302])
+  TrainingPool->train: break at iter=64, cur_mean_loss=0.787546, mean_loss=0.787616, diff=-0.000070, thres=0.000100
+FrameId=3:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 115432, --cropped--> 115431
+  Registration->register: reg_points=torch.Size([7847, 6]), translation=tensor([ 0.0065, -0.0344, -0.0079], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([115431, 6]) -> sampled_points=torch.Size([577155, 6]) time= 1.06 ms
+  LatentFeature->update: samples=577155, new_points=24098 (closreSur>VoxDwn>Radius>Distance), all_points=94626
+  TrainingPool->update: Nvs=577155 ->  close_surface_sample_idx=341263, all_points=2266585, increasement: 1689430
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([341263])
+  TrainingPool->train: break at iter=85, cur_mean_loss=0.780069, mean_loss=0.779998, diff=0.000072, thres=0.000100
+FrameId=4:  cached_time=2.1 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 115157, --cropped--> 115156
+  Registration->register: reg_points=torch.Size([7895, 6]), translation=tensor([ 0.0164, -0.0485, -0.0125], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([115156, 6]) -> sampled_points=torch.Size([575780, 6]) time= 1.06 ms
+  LatentFeature->update: samples=575780, new_points=23939 (closreSur>VoxDwn>Radius>Distance), all_points=118565
+  TrainingPool->update: Nvs=575780 ->  close_surface_sample_idx=339262, all_points=2842365, increasement: 2266585
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([339262])
+  TrainingPool->train: break at iter=80, cur_mean_loss=0.777549, mean_loss=0.777613, diff=-0.000064, thres=0.000100
+FrameId=5:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 116043, --cropped--> 116042
+  Registration->register: reg_points=torch.Size([7820, 6]), translation=tensor([ 0.0258, -0.0550, -0.0138], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([116042, 6]) -> sampled_points=torch.Size([580210, 6]) time= 0.83 ms
+  LatentFeature->update: samples=580210, new_points=24102 (closreSur>VoxDwn>Radius>Distance), all_points=142667
+  TrainingPool->update: Nvs=580210 ->  close_surface_sample_idx=341484, all_points=3422575, increasement: 2842365
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([341484])
+  TrainingPool->train: break at iter=66, cur_mean_loss=0.779242, mean_loss=0.779327, diff=-0.000086, thres=0.000100
+FrameId=6:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 116360, --cropped--> 116359
+  Registration->register: reg_points=torch.Size([8036, 6]), translation=tensor([ 0.0305, -0.0712, -0.0087], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([116359, 6]) -> sampled_points=torch.Size([581795, 6]) time= 1.04 ms
+  LatentFeature->update: samples=581795, new_points=24351 (closreSur>VoxDwn>Radius>Distance), all_points=167018
+  TrainingPool->update: Nvs=581795 ->  close_surface_sample_idx=341759, all_points=4004370, increasement: 3422575
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([341759])
+  TrainingPool->train: break at iter=73, cur_mean_loss=0.775364, mean_loss=0.775357, diff=0.000007, thres=0.000100
+FrameId=7:  cached_time=2.1 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 117147, --cropped--> 117146
+  Registration->register: reg_points=torch.Size([8129, 6]), translation=tensor([ 0.0243, -0.1031, -0.0131], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([117146, 6]) -> sampled_points=torch.Size([585730, 6]) time= 0.79 ms
+  LatentFeature->update: samples=585730, new_points=24803 (closreSur>VoxDwn>Radius>Distance), all_points=191821
+  TrainingPool->update: Nvs=585730 ->  close_surface_sample_idx=343392, all_points=4590100, increasement: 4004370
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([343392])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.776971, mean_loss=0.777021, diff=-0.000050, thres=0.000100
+FrameId=8:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 117642, --cropped--> 117641
+  Registration->register: reg_points=torch.Size([8230, 6]), translation=tensor([ 0.0459, -0.1105, -0.0223], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([117641, 6]) -> sampled_points=torch.Size([588205, 6]) time= 1.06 ms
+  LatentFeature->update: samples=588205, new_points=25285 (closreSur>VoxDwn>Radius>Distance), all_points=217106
+  TrainingPool->update: Nvs=588205 ->  close_surface_sample_idx=345408, all_points=5178305, increasement: 4590100
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([345408])
+  TrainingPool->train: break at iter=61, cur_mean_loss=0.774832, mean_loss=0.774858, diff=-0.000026, thres=0.000100
+FrameId=9:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 117126, --cropped--> 117125
+  Registration->register: reg_points=torch.Size([8205, 6]), translation=tensor([ 0.0389, -0.1156, -0.0253], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([117125, 6]) -> sampled_points=torch.Size([585625, 6]) time= 1.05 ms
+  LatentFeature->update: samples=585625, new_points=25108 (closreSur>VoxDwn>Radius>Distance), all_points=242214
+  TrainingPool->update: Nvs=585625 ->  close_surface_sample_idx=342837, all_points=5763930, increasement: 5178305
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([342837])
+  TrainingPool->train: break at iter=64, cur_mean_loss=0.772239, mean_loss=0.772337, diff=-0.000098, thres=0.000100
+FrameId=10:  cached_time=2.1 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 118297, --cropped--> 118296
+  Registration->register: reg_points=torch.Size([8146, 6]), translation=tensor([ 0.0503, -0.1193, -0.0290], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([118296, 6]) -> sampled_points=torch.Size([591480, 6]) time= 1.04 ms
+  LatentFeature->update: samples=591480, new_points=25268 (closreSur>VoxDwn>Radius>Distance), all_points=267482
+  TrainingPool->update: Nvs=591480 ->  close_surface_sample_idx=346960, all_points=6355410, increasement: 5763930
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([346960])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.775842, mean_loss=0.775858, diff=-0.000016, thres=0.000100
+FrameId=11:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 119991, --cropped--> 119990
+  Registration->register: reg_points=torch.Size([8440, 6]), translation=tensor([ 0.0378, -0.0956, -0.0384], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([119990, 6]) -> sampled_points=torch.Size([599950, 6]) time= 1.04 ms
+  LatentFeature->update: samples=599950, new_points=25980 (closreSur>VoxDwn>Radius>Distance), all_points=293462
+  TrainingPool->update: Nvs=599950 ->  close_surface_sample_idx=351863, all_points=6955360, increasement: 6355410
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([351863])
+  TrainingPool->train: break at iter=67, cur_mean_loss=0.771859, mean_loss=0.771791, diff=0.000069, thres=0.000100
+FrameId=12:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 120143, --cropped--> 120142
+  Registration->register: reg_points=torch.Size([8446, 6]), translation=tensor([ 0.0624, -0.1105, -0.0418], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([120142, 6]) -> sampled_points=torch.Size([600710, 6]) time= 1.13 ms
+  LatentFeature->update: samples=600710, new_points=26109 (closreSur>VoxDwn>Radius>Distance), all_points=319571
+  TrainingPool->update: Nvs=600710 ->  close_surface_sample_idx=352839, all_points=7556070, increasement: 6955360
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([352839])
+  TrainingPool->train: break at iter=61, cur_mean_loss=0.771669, mean_loss=0.771757, diff=-0.000087, thres=0.000100
+FrameId=13:  cached_time=2.3 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 119374, --cropped--> 119373
+  Registration->register: reg_points=torch.Size([8513, 6]), translation=tensor([ 0.0683, -0.1401, -0.0375], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([119373, 6]) -> sampled_points=torch.Size([596865, 6]) time= 1.02 ms
+  LatentFeature->update: samples=596865, new_points=25865 (closreSur>VoxDwn>Radius>Distance), all_points=345436
+  TrainingPool->update: Nvs=596865 ->  close_surface_sample_idx=350561, all_points=8152935, increasement: 7556070
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([350561])
+  TrainingPool->train: break at iter=71, cur_mean_loss=0.768091, mean_loss=0.768166, diff=-0.000075, thres=0.000100
+FrameId=14:  cached_time=2.2 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 120514, --cropped--> 120513
+  Registration->register: reg_points=torch.Size([8433, 6]), translation=tensor([ 0.0805, -0.1201, -0.0392], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([120513, 6]) -> sampled_points=torch.Size([602565, 6]) time= 1.08 ms
+  LatentFeature->update: samples=602565, new_points=26375 (closreSur>VoxDwn>Radius>Distance), all_points=371811
+  TrainingPool->update: Nvs=602565 ->  close_surface_sample_idx=353731, all_points=8755500, increasement: 8152935
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([353731])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.769897, mean_loss=0.769952, diff=-0.000055, thres=0.000100
+FrameId=15:  cached_time=2.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 121464, --cropped--> 121463
+  Registration->register: reg_points=torch.Size([8317, 6]), translation=tensor([ 0.0749, -0.1209, -0.0374], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([121463, 6]) -> sampled_points=torch.Size([607315, 6]) time= 0.98 ms
+  LatentFeature->update: samples=607315, new_points=26453 (closreSur>VoxDwn>Radius>Distance), all_points=398264
+  TrainingPool->update: Nvs=607315 ->  close_surface_sample_idx=356899, all_points=9362815, increasement: 8755500
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([356899])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.769861, mean_loss=0.769929, diff=-0.000068, thres=0.000100
+FrameId=16:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 123381, --cropped--> 123380
+  Registration->register: reg_points=torch.Size([8630, 6]), translation=tensor([ 0.0870, -0.0970, -0.0505], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([123380, 6]) -> sampled_points=torch.Size([616900, 6]) time= 1.09 ms
+  LatentFeature->update: samples=616900, new_points=27276 (closreSur>VoxDwn>Radius>Distance), all_points=425540
+  TrainingPool->update: Nvs=616900 ->  close_surface_sample_idx=362452, all_points=9979715, increasement: 9362815
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([362452])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.770064, mean_loss=0.770155, diff=-0.000091, thres=0.000100
+FrameId=17:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 123827, --cropped--> 123826
+  Registration->register: reg_points=torch.Size([8833, 6]), translation=tensor([ 0.0960, -0.1088, -0.0544], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([123826, 6]) -> sampled_points=torch.Size([619130, 6]) time= 0.93 ms
+  LatentFeature->update: samples=619130, new_points=27575 (closreSur>VoxDwn>Radius>Distance), all_points=453115
+  TrainingPool->update: Nvs=619130 ->  close_surface_sample_idx=363844, all_points=10598845, increasement: 9979715
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([363844])
+  TrainingPool->train: break at iter=56, cur_mean_loss=0.769749, mean_loss=0.769843, diff=-0.000094, thres=0.000100
+FrameId=18:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 122643, --cropped--> 122642
+  Registration->register: reg_points=torch.Size([8724, 6]), translation=tensor([ 0.0995, -0.1195, -0.0554], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([122642, 6]) -> sampled_points=torch.Size([613210, 6]) time= 0.99 ms
+  LatentFeature->update: samples=613210, new_points=26931 (closreSur>VoxDwn>Radius>Distance), all_points=480046
+  TrainingPool->update: Nvs=613210 ->  close_surface_sample_idx=358386, all_points=11212055, increasement: 10598845
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([358386])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.768619, mean_loss=0.768677, diff=-0.000057, thres=0.000100
+FrameId=19:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 123180, --cropped--> 123179
+  Registration->register: reg_points=torch.Size([8923, 6]), translation=tensor([ 0.0974, -0.1250, -0.0608], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([123179, 6]) -> sampled_points=torch.Size([615895, 6]) time= 1.25 ms
+  LatentFeature->update: samples=615895, new_points=27528 (closreSur>VoxDwn>Radius>Distance), all_points=507574
+  TrainingPool->update: Nvs=615895 ->  close_surface_sample_idx=360998, all_points=11827950, increasement: 11212055
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([360998])
+  TrainingPool->train: break at iter=61, cur_mean_loss=0.766721, mean_loss=0.766808, diff=-0.000087, thres=0.000100
+FrameId=20:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 126020, --cropped--> 126019
+  Registration->register: reg_points=torch.Size([9042, 6]), translation=tensor([ 0.0926, -0.1100, -0.0617], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([126019, 6]) -> sampled_points=torch.Size([630095, 6]) time= 0.95 ms
+  LatentFeature->update: samples=630095, new_points=28495 (closreSur>VoxDwn>Radius>Distance), all_points=536069
+  TrainingPool->update: Nvs=630095 ->  close_surface_sample_idx=369838, all_points=12458045, increasement: 11827950
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([369838])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.769494, mean_loss=0.769521, diff=-0.000027, thres=0.000100
+FrameId=21:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 127484, --cropped--> 127483
+  Registration->register: reg_points=torch.Size([8858, 6]), translation=tensor([ 0.1044, -0.1084, -0.0643], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([127483, 6]) -> sampled_points=torch.Size([637415, 6]) time= 1.09 ms
+  LatentFeature->update: samples=637415, new_points=28939 (closreSur>VoxDwn>Radius>Distance), all_points=565008
+  TrainingPool->update: Nvs=637415 ->  close_surface_sample_idx=375986, all_points=13095460, increasement: 12458045
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([375986])
+  TrainingPool->train: break at iter=70, cur_mean_loss=0.764750, mean_loss=0.764823, diff=-0.000073, thres=0.000100
+FrameId=22:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 127710, --cropped--> 127709
+  Registration->register: reg_points=torch.Size([9541, 6]), translation=tensor([ 0.1265, -0.1321, -0.0559], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([127709, 6]) -> sampled_points=torch.Size([638545, 6]) time= 1.03 ms
+  LatentFeature->update: samples=638545, new_points=29702 (closreSur>VoxDwn>Radius>Distance), all_points=594710
+  TrainingPool->update: Nvs=638545 ->  close_surface_sample_idx=375075, all_points=13734005, increasement: 13095460
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([375075])
+  TrainingPool->train: break at iter=58, cur_mean_loss=0.766695, mean_loss=0.766786, diff=-0.000091, thres=0.000100
+FrameId=23:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 127869, --cropped--> 127868
+  Registration->register: reg_points=torch.Size([9332, 6]), translation=tensor([ 0.1414, -0.1614, -0.0472], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([127868, 6]) -> sampled_points=torch.Size([639340, 6]) time= 1.08 ms
+  LatentFeature->update: samples=639340, new_points=29240 (closreSur>VoxDwn>Radius>Distance), all_points=623950
+  TrainingPool->update: Nvs=639340 ->  close_surface_sample_idx=375911, all_points=14373345, increasement: 13734005
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([375911])
+  TrainingPool->train: break at iter=67, cur_mean_loss=0.764061, mean_loss=0.764087, diff=-0.000025, thres=0.000100
+FrameId=24:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129286, --cropped--> 129285
+  Registration->register: reg_points=torch.Size([9649, 6]), translation=tensor([ 0.1596, -0.1768, -0.0581], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129285, 6]) -> sampled_points=torch.Size([646425, 6]) time= 0.89 ms
+  LatentFeature->update: samples=646425, new_points=30384 (closreSur>VoxDwn>Radius>Distance), all_points=654334
+  TrainingPool->update: Nvs=646425 ->  close_surface_sample_idx=380480, all_points=15019770, increasement: 14373345
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([380480])
+  TrainingPool->train: break at iter=60, cur_mean_loss=0.764448, mean_loss=0.764540, diff=-0.000092, thres=0.000100
+FrameId=25:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129902, --cropped--> 129901
+  Registration->register: reg_points=torch.Size([9659, 6]), translation=tensor([ 0.1393, -0.1942, -0.0730], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129901, 6]) -> sampled_points=torch.Size([649505, 6]) time= 1.12 ms
+  LatentFeature->update: samples=649505, new_points=30357 (closreSur>VoxDwn>Radius>Distance), all_points=684691
+  TrainingPool->update: Nvs=649505 ->  close_surface_sample_idx=381767, all_points=15669275, increasement: 15019770
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([381767])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.766603, mean_loss=0.766671, diff=-0.000068, thres=0.000100
+FrameId=26:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129555, --cropped--> 129554
+  Registration->register: reg_points=torch.Size([9669, 6]), translation=tensor([ 0.1605, -0.2534, -0.0834], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129554, 6]) -> sampled_points=torch.Size([647770, 6]) time= 1.08 ms
+  LatentFeature->update: samples=647770, new_points=30333 (closreSur>VoxDwn>Radius>Distance), all_points=715024
+  TrainingPool->update: Nvs=647770 ->  close_surface_sample_idx=380592, all_points=16317045, increasement: 15669275
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([380592])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.767268, mean_loss=0.767348, diff=-0.000080, thres=0.000100
+FrameId=27:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129258, --cropped--> 129257
+  Registration->register: reg_points=torch.Size([9665, 6]), translation=tensor([ 0.1900, -0.2723, -0.0766], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129257, 6]) -> sampled_points=torch.Size([646285, 6]) time= 1.03 ms
+  LatentFeature->update: samples=646285, new_points=29916 (closreSur>VoxDwn>Radius>Distance), all_points=744940
+  TrainingPool->update: Nvs=646285 ->  close_surface_sample_idx=380024, all_points=16963330, increasement: 16317045
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([380024])
+  TrainingPool->train: break at iter=64, cur_mean_loss=0.763544, mean_loss=0.763625, diff=-0.000081, thres=0.000100
+FrameId=28:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129854, --cropped--> 129853
+  Registration->register: reg_points=torch.Size([9702, 6]), translation=tensor([ 0.1891, -0.3049, -0.0845], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129853, 6]) -> sampled_points=torch.Size([649265, 6]) time= 1.09 ms
+  LatentFeature->update: samples=649265, new_points=30188 (closreSur>VoxDwn>Radius>Distance), all_points=775128
+  TrainingPool->update: Nvs=649265 ->  close_surface_sample_idx=382171, all_points=17612595, increasement: 16963330
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([382171])
+  TrainingPool->train: break at iter=58, cur_mean_loss=0.764659, mean_loss=0.764756, diff=-0.000097, thres=0.000100
+FrameId=29:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 130474, --cropped--> 130473
+  Registration->register: reg_points=torch.Size([9750, 6]), translation=tensor([ 0.1303, -0.2761, -0.0793], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([130473, 6]) -> sampled_points=torch.Size([652365, 6]) time= 0.88 ms
+  LatentFeature->update: samples=652365, new_points=30605 (closreSur>VoxDwn>Radius>Distance), all_points=805733
+  TrainingPool->update: Nvs=652365 ->  close_surface_sample_idx=383388, all_points=18264960, increasement: 17612595
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([383388])
+  TrainingPool->train: break at iter=54, cur_mean_loss=0.763012, mean_loss=0.763110, diff=-0.000097, thres=0.000100
+FrameId=30:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 130206, --cropped--> 130205
+  Registration->register: reg_points=torch.Size([9661, 6]), translation=tensor([ 0.1520, -0.2532, -0.0677], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([130205, 6]) -> sampled_points=torch.Size([651025, 6]) time= 0.96 ms
+  LatentFeature->update: samples=651025, new_points=30368 (closreSur>VoxDwn>Radius>Distance), all_points=836101
+  TrainingPool->update: Nvs=651025 ->  close_surface_sample_idx=383324, all_points=18915985, increasement: 18264960
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([383324])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.763759, mean_loss=0.763853, diff=-0.000094, thres=0.000100
+FrameId=31:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129388, --cropped--> 129387
+  Registration->register: reg_points=torch.Size([9766, 6]), translation=tensor([ 0.1474, -0.2350, -0.0608], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129387, 6]) -> sampled_points=torch.Size([646935, 6]) time= 1.10 ms
+  LatentFeature->update: samples=646935, new_points=30526 (closreSur>VoxDwn>Radius>Distance), all_points=866627
+  TrainingPool->update: Nvs=646935 ->  close_surface_sample_idx=380496, all_points=19562920, increasement: 18915985
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([380496])
+  TrainingPool->train: break at iter=71, cur_mean_loss=0.760243, mean_loss=0.760335, diff=-0.000092, thres=0.000100
+FrameId=32:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129159, --cropped--> 129158
+  Registration->register: reg_points=torch.Size([9744, 6]), translation=tensor([ 0.1624, -0.2608, -0.0725], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129158, 6]) -> sampled_points=torch.Size([645790, 6]) time= 0.83 ms
+  LatentFeature->update: samples=645790, new_points=30175 (closreSur>VoxDwn>Radius>Distance), all_points=896802
+  TrainingPool->update: Nvs=645790 ->  close_surface_sample_idx=378612, all_points=20208710, increasement: 19562920
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([378612])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.761732, mean_loss=0.761815, diff=-0.000082, thres=0.000100
+FrameId=33:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129301, --cropped--> 129300
+  Registration->register: reg_points=torch.Size([9561, 6]), translation=tensor([ 0.1457, -0.2529, -0.0748], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129300, 6]) -> sampled_points=torch.Size([646500, 6]) time= 1.11 ms
+  LatentFeature->update: samples=646500, new_points=30172 (closreSur>VoxDwn>Radius>Distance), all_points=926974
+  TrainingPool->update: Nvs=646500 ->  close_surface_sample_idx=379145, all_points=20855210, increasement: 20208710
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([379145])
+  TrainingPool->train: break at iter=56, cur_mean_loss=0.760282, mean_loss=0.760304, diff=-0.000022, thres=0.000100
+FrameId=34:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 130968, --cropped--> 130967
+  Registration->register: reg_points=torch.Size([9881, 6]), translation=tensor([ 0.1457, -0.2529, -0.0748], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([130967, 6]) -> sampled_points=torch.Size([654835, 6]) time= 0.89 ms
+  LatentFeature->update: samples=654835, new_points=31092 (closreSur>VoxDwn>Radius>Distance), all_points=958066
+  TrainingPool->update: Nvs=654835 ->  close_surface_sample_idx=384305, all_points=21510045, increasement: 20855210
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([384305])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.760794, mean_loss=0.760743, diff=0.000051, thres=0.000100
+FrameId=35:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 129772, --cropped--> 129771
+  Registration->register: reg_points=torch.Size([9657, 6]), translation=tensor([ 0.1370, -0.2294, -0.0800], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([129771, 6]) -> sampled_points=torch.Size([648855, 6]) time= 1.09 ms
+  LatentFeature->update: samples=648855, new_points=30469 (closreSur>VoxDwn>Radius>Distance), all_points=988535
+  TrainingPool->update: Nvs=648855 ->  close_surface_sample_idx=380790, all_points=22158900, increasement: 21510045
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([380790])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.759607, mean_loss=0.759700, diff=-0.000093, thres=0.000100
+FrameId=36:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 130107, --cropped--> 130106
+  Registration->register: reg_points=torch.Size([9430, 6]), translation=tensor([ 0.1549, -0.2369, -0.0786], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([130106, 6]) -> sampled_points=torch.Size([650530, 6]) time= 1.09 ms
+  LatentFeature->update: samples=650530, new_points=30497 (closreSur>VoxDwn>Radius>Distance), all_points=1019032
+  TrainingPool->update: Nvs=650530 ->  close_surface_sample_idx=382656, all_points=22809430, increasement: 22158900
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([382656])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.760299, mean_loss=0.760261, diff=0.000038, thres=0.000100
+FrameId=37:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 133252, --cropped--> 133251
+  Registration->register: reg_points=torch.Size([9698, 6]), translation=tensor([ 0.1699, -0.2469, -0.0975], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([133251, 6]) -> sampled_points=torch.Size([666255, 6]) time= 1.04 ms
+  LatentFeature->update: samples=666255, new_points=31646 (closreSur>VoxDwn>Radius>Distance), all_points=1050678
+  TrainingPool->update: Nvs=666255 ->  close_surface_sample_idx=392525, all_points=23475685, increasement: 22809430
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([392525])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.760925, mean_loss=0.760913, diff=0.000013, thres=0.000100
+FrameId=38:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 132695, --cropped--> 132694
+  Registration->register: reg_points=torch.Size([9746, 6]), translation=tensor([ 0.1592, -0.2478, -0.1059], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([132694, 6]) -> sampled_points=torch.Size([663470, 6]) time= 0.96 ms
+  LatentFeature->update: samples=663470, new_points=31733 (closreSur>VoxDwn>Radius>Distance), all_points=1082411
+  TrainingPool->update: Nvs=663470 ->  close_surface_sample_idx=391292, all_points=24139155, increasement: 23475685
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([391292])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.760412, mean_loss=0.760490, diff=-0.000078, thres=0.000100
+FrameId=39:  cached_time=1.7 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 135654, --cropped--> 135653
+  Registration->register: reg_points=torch.Size([10271, 6]), translation=tensor([ 0.2000, -0.2521, -0.1020], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([135653, 6]) -> sampled_points=torch.Size([678265, 6]) time= 1.05 ms
+  LatentFeature->update: samples=678265, new_points=33179 (closreSur>VoxDwn>Radius>Distance), all_points=1115590
+  TrainingPool->update: Nvs=678265 ->  close_surface_sample_idx=400251, all_points=24817420, increasement: 24139155
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([400251])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.760786, mean_loss=0.760789, diff=-0.000003, thres=0.000100
+FrameId=40:  cached_time=1.6 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 133066, --cropped--> 133065
+  Registration->register: reg_points=torch.Size([9860, 6]), translation=tensor([ 0.1221, -0.2584, -0.0788], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([133065, 6]) -> sampled_points=torch.Size([665325, 6]) time= 0.86 ms
+  LatentFeature->update: samples=665325, new_points=31709 (closreSur>VoxDwn>Radius>Distance), all_points=1147299
+  TrainingPool->update: Nvs=665325 ->  close_surface_sample_idx=391522, all_points=25482745, increasement: 24817420
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([391522])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.759378, mean_loss=0.759419, diff=-0.000041, thres=0.000100
+FrameId=41:  cached_time=2.4 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136233, --cropped--> 136232
+  Registration->register: reg_points=torch.Size([10246, 6]), translation=tensor([ 0.1750, -0.2542, -0.0798], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136232, 6]) -> sampled_points=torch.Size([681160, 6]) time= 0.84 ms
+  LatentFeature->update: samples=681160, new_points=33167 (closreSur>VoxDwn>Radius>Distance), all_points=1180466
+  TrainingPool->update: Nvs=681160 ->  close_surface_sample_idx=401971, all_points=26163905, increasement: 25482745
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([401971])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.758743, mean_loss=0.758821, diff=-0.000077, thres=0.000100
+FrameId=42:  cached_time=1.5 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137201, --cropped--> 137200
+  Registration->register: reg_points=torch.Size([10235, 6]), translation=tensor([ 0.1627, -0.2861, -0.0890], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137200, 6]) -> sampled_points=torch.Size([686000, 6]) time= 1.03 ms
+  LatentFeature->update: samples=686000, new_points=33396 (closreSur>VoxDwn>Radius>Distance), all_points=1213862
+  TrainingPool->update: Nvs=686000 ->  close_surface_sample_idx=403725, all_points=26849905, increasement: 26163905
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([403725])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.758921, mean_loss=0.758863, diff=0.000057, thres=0.000100
+FrameId=43:  cached_time=1.7 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 138045, --cropped--> 138044
+  Registration->register: reg_points=torch.Size([10192, 6]), translation=tensor([ 0.1560, -0.2332, -0.0956], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([138044, 6]) -> sampled_points=torch.Size([690220, 6]) time= 1.11 ms
+  LatentFeature->update: samples=690220, new_points=33528 (closreSur>VoxDwn>Radius>Distance), all_points=1247390
+  TrainingPool->update: Nvs=690220 ->  close_surface_sample_idx=407878, all_points=27540125, increasement: 26849905
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([407878])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.759494, mean_loss=0.759547, diff=-0.000052, thres=0.000100
+FrameId=44:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137985, --cropped--> 137984
+  Registration->register: reg_points=torch.Size([10244, 6]), translation=tensor([ 0.1887, -0.2311, -0.0876], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137984, 6]) -> sampled_points=torch.Size([689920, 6]) time= 1.06 ms
+  LatentFeature->update: samples=689920, new_points=33472 (closreSur>VoxDwn>Radius>Distance), all_points=1280862
+  TrainingPool->update: Nvs=689920 ->  close_surface_sample_idx=406255, all_points=28230045, increasement: 27540125
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([406255])
+  TrainingPool->train: break at iter=54, cur_mean_loss=0.758693, mean_loss=0.758704, diff=-0.000011, thres=0.000100
+FrameId=45:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 139009, --cropped--> 139008
+  Registration->register: reg_points=torch.Size([10431, 6]), translation=tensor([ 0.2007, -0.2273, -0.0847], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([139008, 6]) -> sampled_points=torch.Size([695040, 6]) time= 0.92 ms
+  LatentFeature->update: samples=695040, new_points=34318 (closreSur>VoxDwn>Radius>Distance), all_points=1315180
+  TrainingPool->update: Nvs=695040 ->  close_surface_sample_idx=409659, all_points=28925085, increasement: 28230045
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([409659])
+  TrainingPool->train: break at iter=60, cur_mean_loss=0.756477, mean_loss=0.756571, diff=-0.000095, thres=0.000100
+FrameId=46:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 138731, --cropped--> 138730
+  Registration->register: reg_points=torch.Size([10332, 6]), translation=tensor([ 0.2175, -0.2182, -0.1012], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([138730, 6]) -> sampled_points=torch.Size([693650, 6]) time= 1.12 ms
+  LatentFeature->update: samples=693650, new_points=33941 (closreSur>VoxDwn>Radius>Distance), all_points=1349121
+  TrainingPool->update: Nvs=693650 ->  close_surface_sample_idx=409274, all_points=29618735, increasement: 28925085
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([409274])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.757701, mean_loss=0.757790, diff=-0.000089, thres=0.000100
+FrameId=47:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137671, --cropped--> 137670
+  Registration->register: reg_points=torch.Size([10376, 6]), translation=tensor([ 0.2289, -0.2104, -0.0940], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137670, 6]) -> sampled_points=torch.Size([688350, 6]) time= 1.12 ms
+  LatentFeature->update: samples=688350, new_points=33833 (closreSur>VoxDwn>Radius>Distance), all_points=1382954
+  TrainingPool->update: Nvs=688350 ->  close_surface_sample_idx=405443, all_points=30307085, increasement: 29618735
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([405443])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.759635, mean_loss=0.759656, diff=-0.000021, thres=0.000100
+FrameId=48:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136701, --cropped--> 136700
+  Registration->register: reg_points=torch.Size([10285, 6]), translation=tensor([ 0.2170, -0.2163, -0.0888], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136700, 6]) -> sampled_points=torch.Size([683500, 6]) time= 1.13 ms
+  LatentFeature->update: samples=683500, new_points=33278 (closreSur>VoxDwn>Radius>Distance), all_points=1416232
+  TrainingPool->update: Nvs=683500 ->  close_surface_sample_idx=402015, all_points=30990585, increasement: 30307085
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([402015])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.756519, mean_loss=0.756589, diff=-0.000071, thres=0.000100
+FrameId=49:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137931, --cropped--> 137930
+  Registration->register: reg_points=torch.Size([10226, 6]), translation=tensor([ 0.2202, -0.2216, -0.0845], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137930, 6]) -> sampled_points=torch.Size([689650, 6]) time= 0.90 ms
+  LatentFeature->update: samples=689650, new_points=33597 (closreSur>VoxDwn>Radius>Distance), all_points=1449829
+  TrainingPool->update: Nvs=689650 ->  close_surface_sample_idx=406351, all_points=31680235, increasement: 30990585
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([406351])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.757483, mean_loss=0.757506, diff=-0.000023, thres=0.000100
+FrameId=50:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137720, --cropped--> 137719
+  Registration->register: reg_points=torch.Size([10398, 6]), translation=tensor([ 0.2147, -0.2219, -0.0833], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137719, 6]) -> sampled_points=torch.Size([688595, 6]) time= 1.09 ms
+  LatentFeature->update: samples=688595, new_points=33665 (closreSur>VoxDwn>Radius>Distance), all_points=1483494
+  TrainingPool->update: Nvs=688595 ->  close_surface_sample_idx=404617, all_points=32368830, increasement: 31680235
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([404617])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.757424, mean_loss=0.757514, diff=-0.000091, thres=0.000100
+FrameId=51:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136888, --cropped--> 136887
+  Registration->register: reg_points=torch.Size([10361, 6]), translation=tensor([ 0.2165, -0.2178, -0.0768], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136887, 6]) -> sampled_points=torch.Size([684435, 6]) time= 0.99 ms
+  LatentFeature->update: samples=684435, new_points=33451 (closreSur>VoxDwn>Radius>Distance), all_points=1516945
+  TrainingPool->update: Nvs=684435 ->  close_surface_sample_idx=402152, all_points=33053265, increasement: 32368830
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([402152])
+  TrainingPool->train: break at iter=61, cur_mean_loss=0.755676, mean_loss=0.755666, diff=0.000010, thres=0.000100
+FrameId=52:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136525, --cropped--> 136524
+  Registration->register: reg_points=torch.Size([10274, 6]), translation=tensor([ 0.2308, -0.2283, -0.0624], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136524, 6]) -> sampled_points=torch.Size([682620, 6]) time= 1.15 ms
+  LatentFeature->update: samples=682620, new_points=33102 (closreSur>VoxDwn>Radius>Distance), all_points=1550047
+  TrainingPool->update: Nvs=682620 ->  close_surface_sample_idx=401196, all_points=33735885, increasement: 33053265
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([401196])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.755818, mean_loss=0.755908, diff=-0.000090, thres=0.000100
+FrameId=53:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136369, --cropped--> 136368
+  Registration->register: reg_points=torch.Size([10237, 6]), translation=tensor([ 0.2388, -0.2259, -0.0588], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136368, 6]) -> sampled_points=torch.Size([681840, 6]) time= 0.96 ms
+  LatentFeature->update: samples=681840, new_points=33476 (closreSur>VoxDwn>Radius>Distance), all_points=1583523
+  TrainingPool->update: Nvs=681840 ->  close_surface_sample_idx=400618, all_points=34417725, increasement: 33735885
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([400618])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.755899, mean_loss=0.755913, diff=-0.000014, thres=0.000100
+FrameId=54:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136089, --cropped--> 136088
+  Registration->register: reg_points=torch.Size([10286, 6]), translation=tensor([ 0.2409, -0.2214, -0.0651], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136088, 6]) -> sampled_points=torch.Size([680440, 6]) time= 1.09 ms
+  LatentFeature->update: samples=680440, new_points=33224 (closreSur>VoxDwn>Radius>Distance), all_points=1616747
+  TrainingPool->update: Nvs=680440 ->  close_surface_sample_idx=399868, all_points=35098165, increasement: 34417725
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([399868])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.755862, mean_loss=0.755928, diff=-0.000066, thres=0.000100
+FrameId=55:  cached_time=2.1 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136548, --cropped--> 136547
+  Registration->register: reg_points=torch.Size([10157, 6]), translation=tensor([ 0.2412, -0.2046, -0.0667], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136547, 6]) -> sampled_points=torch.Size([682735, 6]) time= 1.08 ms
+  LatentFeature->update: samples=682735, new_points=33161 (closreSur>VoxDwn>Radius>Distance), all_points=1649908
+  TrainingPool->update: Nvs=682735 ->  close_surface_sample_idx=400720, all_points=35780900, increasement: 35098165
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([400720])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.755559, mean_loss=0.755549, diff=0.000010, thres=0.000100
+FrameId=56:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136300, --cropped--> 136299
+  Registration->register: reg_points=torch.Size([10239, 6]), translation=tensor([ 0.2441, -0.2031, -0.0669], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136299, 6]) -> sampled_points=torch.Size([681495, 6]) time= 1.11 ms
+  LatentFeature->update: samples=681495, new_points=33449 (closreSur>VoxDwn>Radius>Distance), all_points=1683357
+  TrainingPool->update: Nvs=681495 ->  close_surface_sample_idx=400567, all_points=36462395, increasement: 35780900
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([400567])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.754128, mean_loss=0.754200, diff=-0.000072, thres=0.000100
+FrameId=57:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136052, --cropped--> 136051
+  Registration->register: reg_points=torch.Size([10237, 6]), translation=tensor([ 0.2581, -0.2367, -0.0795], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136051, 6]) -> sampled_points=torch.Size([680255, 6]) time= 1.04 ms
+  LatentFeature->update: samples=680255, new_points=33023 (closreSur>VoxDwn>Radius>Distance), all_points=1716380
+  TrainingPool->update: Nvs=680255 ->  close_surface_sample_idx=399788, all_points=37142650, increasement: 36462395
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([399788])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.755662, mean_loss=0.755628, diff=0.000034, thres=0.000100
+FrameId=58:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136146, --cropped--> 136145
+  Registration->register: reg_points=torch.Size([10213, 6]), translation=tensor([ 0.2512, -0.2169, -0.1024], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136145, 6]) -> sampled_points=torch.Size([680725, 6]) time= 0.85 ms
+  LatentFeature->update: samples=680725, new_points=32967 (closreSur>VoxDwn>Radius>Distance), all_points=1749347
+  TrainingPool->update: Nvs=680725 ->  close_surface_sample_idx=399072, all_points=37823375, increasement: 37142650
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([399072])
+  TrainingPool->train: break at iter=56, cur_mean_loss=0.753063, mean_loss=0.753127, diff=-0.000064, thres=0.000100
+FrameId=59:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 136828, --cropped--> 136827
+  Registration->register: reg_points=torch.Size([10410, 6]), translation=tensor([ 0.2431, -0.2171, -0.1043], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([136827, 6]) -> sampled_points=torch.Size([684135, 6]) time= 1.05 ms
+  LatentFeature->update: samples=684135, new_points=33769 (closreSur>VoxDwn>Radius>Distance), all_points=1783116
+  TrainingPool->update: Nvs=684135 ->  close_surface_sample_idx=401646, all_points=38507510, increasement: 37823375
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([401646])
+  TrainingPool->train: break at iter=54, cur_mean_loss=0.754541, mean_loss=0.754616, diff=-0.000075, thres=0.000100
+FrameId=60:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137371, --cropped--> 137370
+  Registration->register: reg_points=torch.Size([10488, 6]), translation=tensor([ 0.2689, -0.2190, -0.0879], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137370, 6]) -> sampled_points=torch.Size([686850, 6]) time= 1.02 ms
+  LatentFeature->update: samples=686850, new_points=33807 (closreSur>VoxDwn>Radius>Distance), all_points=1816923
+  TrainingPool->update: Nvs=686850 ->  close_surface_sample_idx=403070, all_points=39194360, increasement: 38507510
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([403070])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.753467, mean_loss=0.753404, diff=0.000062, thres=0.000100
+FrameId=61:  cached_time=5.7 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 138074, --cropped--> 138073
+  Registration->register: reg_points=torch.Size([10429, 6]), translation=tensor([ 0.2616, -0.2218, -0.0967], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([138073, 6]) -> sampled_points=torch.Size([690365, 6]) time= 1.04 ms
+  LatentFeature->update: samples=690365, new_points=34007 (closreSur>VoxDwn>Radius>Distance), all_points=1850930
+  TrainingPool->update: Nvs=690365 ->  close_surface_sample_idx=405416, all_points=39884725, increasement: 39194360
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([405416])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.753683, mean_loss=0.753640, diff=0.000043, thres=0.000100
+FrameId=62:  cached_time=1.8 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 138171, --cropped--> 138170
+  Registration->register: reg_points=torch.Size([10880, 6]), translation=tensor([ 0.2706, -0.1925, -0.0701], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([138170, 6]) -> sampled_points=torch.Size([690850, 6]) time= 1.29 ms
+  LatentFeature->update: samples=690850, new_points=34548 (closreSur>VoxDwn>Radius>Distance), all_points=1885478
+  TrainingPool->update: Nvs=690850 ->  close_surface_sample_idx=405568, all_points=40575575, increasement: 39884725
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([405568])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.754391, mean_loss=0.754457, diff=-0.000066, thres=0.000100
+FrameId=63:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137685, --cropped--> 137684
+  Registration->register: reg_points=torch.Size([10521, 6]), translation=tensor([ 0.2331, -0.2596, -0.0988], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137684, 6]) -> sampled_points=torch.Size([688420, 6]) time= 1.16 ms
+  LatentFeature->update: samples=688420, new_points=34245 (closreSur>VoxDwn>Radius>Distance), all_points=1919723
+  TrainingPool->update: Nvs=688420 ->  close_surface_sample_idx=404386, all_points=41263995, increasement: 40575575
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([404386])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.753464, mean_loss=0.753561, diff=-0.000098, thres=0.000100
+FrameId=64:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137587, --cropped--> 137586
+  Registration->register: reg_points=torch.Size([10576, 6]), translation=tensor([ 0.2338, -0.2278, -0.0819], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137586, 6]) -> sampled_points=torch.Size([687930, 6]) time= 1.10 ms
+  LatentFeature->update: samples=687930, new_points=34125 (closreSur>VoxDwn>Radius>Distance), all_points=1953848
+  TrainingPool->update: Nvs=687930 ->  close_surface_sample_idx=403744, all_points=41951925, increasement: 41263995
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([403744])
+  TrainingPool->train: break at iter=54, cur_mean_loss=0.754344, mean_loss=0.754416, diff=-0.000072, thres=0.000100
+FrameId=65:  cached_time=2.0 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137534, --cropped--> 137533
+  Registration->register: reg_points=torch.Size([10470, 6]), translation=tensor([ 0.2502, -0.2103, -0.0834], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137533, 6]) -> sampled_points=torch.Size([687665, 6]) time= 1.01 ms
+  LatentFeature->update: samples=687665, new_points=33855 (closreSur>VoxDwn>Radius>Distance), all_points=1987703
+  TrainingPool->update: Nvs=687665 ->  close_surface_sample_idx=403835, all_points=42639590, increasement: 41951925
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([403835])
+  TrainingPool->train: break at iter=53, cur_mean_loss=0.754315, mean_loss=0.754393, diff=-0.000078, thres=0.000100
+FrameId=66:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137667, --cropped--> 137666
+  Registration->register: reg_points=torch.Size([10395, 6]), translation=tensor([ 0.2722, -0.1913, -0.0607], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137666, 6]) -> sampled_points=torch.Size([688330, 6]) time= 1.14 ms
+  LatentFeature->update: samples=688330, new_points=33983 (closreSur>VoxDwn>Radius>Distance), all_points=2021686
+  TrainingPool->update: Nvs=688330 ->  close_surface_sample_idx=404513, all_points=43327920, increasement: 42639590
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([404513])
+  TrainingPool->train: break at iter=55, cur_mean_loss=0.752767, mean_loss=0.752805, diff=-0.000038, thres=0.000100
+FrameId=67:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137074, --cropped--> 137073
+  Registration->register: reg_points=torch.Size([10449, 6]), translation=tensor([ 0.2501, -0.2107, -0.0741], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137073, 6]) -> sampled_points=torch.Size([685365, 6]) time= 1.03 ms
+  LatentFeature->update: samples=685365, new_points=33658 (closreSur>VoxDwn>Radius>Distance), all_points=2055344
+  TrainingPool->update: Nvs=685365 ->  close_surface_sample_idx=402634, all_points=44013285, increasement: 43327920
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([402634])
+  TrainingPool->train: break at iter=57, cur_mean_loss=0.751357, mean_loss=0.751321, diff=0.000036, thres=0.000100
+FrameId=68:  cached_time=1.9 ms
+  TumDataset->next_frame: Original=307200 -downsample-> 137894, --cropped--> 137893
+  Registration->register: reg_points=torch.Size([10344, 6]), translation=tensor([ 0.2703, -0.2166, -0.0940], device='cuda:0')
+  Sampling->dist_sampling: pc=torch.Size([137893, 6]) -> sampled_points=torch.Size([689465, 6]) time= 1.06 ms
+  LatentFeature->update: samples=689465, new_points=34123 (closreSur>VoxDwn>Radius>Distance), all_points=2089467
+  TrainingPool->update: Nvs=689465 ->  close_surface_sample_idx=405165, all_points=44702750, increasement: 44013285
+  TrainingPool->train: n_iter=300, surface_sample_idx=torch.Size([405165])
+  TrainingPool->train: break at iter=52, cur_mean_loss=0.752979, mean_loss=0.753021, diff=-0.000042, thres=0.000100

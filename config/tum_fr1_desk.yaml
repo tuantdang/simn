@@ -1,0 +1,158 @@
+# More information https://cvg.cit.tum.de/data/datasets/rgbd-dataset
+# Camera Rate: 30 fps
+# Resolution:  640x480
+# Ground-truth:  The ground-truth trajectory was obtained from a high-accuracy motion-capture system 
+#                with eight high-speed tracking cameras (100 Hz).
+# Download at: https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download
+dataset: # Dataset path & settings
+  name: tum
+  root: /home/tuandang/workspace/datasets/tum/extract
+  sub_path: rgbd_dataset_freiburg1_desk
+  cached: True
+  multi_processing: False
+  chunk_size: 100 # multi-processing
+
+# https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats#intrinsic_camera_calibration_of_the_kinect
+camera: # freiburg1
+  width: 640
+  height: 480
+  fx: 517.3
+  fy: 516.5
+  cx: 318.6
+  cy: 255.3
+  dscale: 5000.0 # depth scale
+  fps: 30
+
+# camera: # freiburg2
+#   width: 640
+#   height: 480
+#   fx: 520.9
+#   fy: 521.0
+#   cx: 325.1
+#   cy: 249.7
+#   dscale: 5000.0 # depth scale
+#   fps: 30
+
+# camera: # freiburg3
+#   width: 640
+#   height: 480
+#   fx: 535.4
+#   fy: 539.2
+#   cx: 320.1
+#   cy: 247.6
+#   dscale: 5000.0 # depth scale
+#   fps: 30
+
+# Frames
+buffer_size: 1000000007 # 100 MB max number of points
+max_number_frames: 10000 # max number of frames
+esp: 1.0e-15
+
+pc: # Point clouds settings
+  vs_preprocessing: 1.0e-2 # cm Voxel down-sampling pre-processing
+  vs_reg: 60.0e-3 # mm: Voxel down-sampling for registration
+  vs_latentfeature: 3.0e-2 # cm downsampling used for point features
+  max_range: 60 # meter
+  color_channel: 0
+  use_point_sematic: False # Is point semantic used?
+  range_checked: True
+  min_range: 2.5
+  max_range: 60.0
+  min_z: -7.5
+  max_z: -0.5
+
+sampling:
+  seed: 42
+  surface_radius: 1.0e-2 # cm
+  nsamples: 3 # number of sampled points for each point
+  is_compensated: False # compensate for points cannot be sampled
+  surface_sample_range: 3.0e-3 # mm
+  surface_nsamples: 2
+  front_nsamples: 1
+  back_nsamples: 1
+  sigma: 2.0
+  front_ratio: 0.3 # distance from origin: samples from dist*front_ratio, called A, to surface, there are no points between [0, A]
+  sdf_threshold: 1.0e-3 # mm
+  dist_weight_scale: 0.8
+
+local_frame: # local frame
+  radius: 60.0 # meters
+  travel_dist_ratio: 5.0
+  max_points: 50000000 # 50M points
+  max_acc_odom: 0.2 # meter
+  max_angle_x: 5.0 # degree
+  max_angle_y: 5.0 # degree
+  max_angle_z: 5.0 # degree
+  min_loop_dist: 10.0e-2
+  min_nframes_btw_cur_start: 5
+  # max_points: 400000 # test 400K
+
+query:
+  nvoxels_radius: 2 # search cubic edge: number of voxels
+  ext_radius: 0.2
+  knn: 6  # number of nearest neighbors
+
+feature: # point feature
+  feature_dim: 8
+  input_dim: 6 # xzy, and more
+  feature_std: 0.0
+  certainty_thres: 1.0
+
+
+batchsize: # batch size
+  infer: 1048576 # ~  1M ~ 20^20
+  new_sample_ratio: 0.4 # i.e: 0.125*16384= ~  2K
+  training: 16384 #32K~2^15 and 16K ~ 2^14
+  skip_step: 10
+  # training: 4
+
+decoder:
+  use_leaky_relu: False
+  bias_on: True
+  pos_encoding_band: 0 # position encoding
+  hidden_dim: 64
+  hidden_level: 2
+  output_dim: 1
+
+loss:
+  type: "bce"
+  logistic_gaussian_ratio: 0.55
+  sigma_sigmoid_m: 0.1
+  weight_bce: 1.0
+  weight_eikonal: 0.5
+
+optimizer:
+  name: "Adam"
+  esp: 1.0e-15
+  learning_rate: 0.01
+  weight_decay: 0.0
+
+training:
+  n_iter: 300
+  adaptive: True
+  window: 50
+  loss_threshold: 1.0e-4
+
+tracking:
+  min_grad_magnitude: 0.5
+  max_grad_magnitude: 2.0
+  lm_lambda: 1.0e-4
+  n_iter: 100
+  GM_dist: 0.3 #  Geman-McClure
+  GM_grad: 0.1
+  translation_thres: 2.0e-3 # milimeter
+  rotation_thres: 2.0e-2 # degree
+  
+
+# Pytorch type configuration
+device: cuda
+dtype:
+  point: torch.float32
+  transformation: torch.float64
+  index: torch.int64
+
+
+verbose: 1 # 0: no; 1: update; 2:train, detail; 3: all
+visual: True # Main visual continues frames
+visual_debug: False # For debugging only: one shoot 
+save_pcd_rate: 20 # Save point cloud every n frames
