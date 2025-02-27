@@ -3,7 +3,7 @@
 # @File      config.py
 # @Author    Tuan Dang  
 # @Email    tuan.dang@uta.edu or dangthanhtuanit@gmail.com
-# Copyright (c) 2024 Tuan Dang, all rights reserved
+# Copyright (c) 2025 Tuan Dang, all rights reserved
 
 ''' Description
 The config class provides an easy method  to map the YAML key value into object properties/values
@@ -12,14 +12,23 @@ This helps coding concise and consitantly over the configuration.
 Example:
 YAML:
     dataset: # Dataset path & settings
-        name: kitti
-        root: /home/tuandang/workspace/PIN_SLAM/data/kitti_example/sequences/00/
-        pointcloud: velodyne
-        image: image_2
-        label: labels
-        pose: poses.txt
-        calib: calib.txt
-        use_pose: True
+    name: tum
+    root: /home/tuandang/workspace/datasets/tum/extract
+    sub_path: rgbd_dataset_freiburg1_desk
+    cached: True
+    multi_processing: False
+    chunk_size: 100 # multi-processing
+
+    # https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats#intrinsic_camera_calibration_of_the_kinect
+    camera: # freiburg1
+    width: 640
+    height: 480
+    fx: 517.3
+    fy: 516.5
+    cx: 318.6
+    cy: 255.3
+    dscale: 5000.0 # depth scale
+    fps: 30
 
 Python:
     cfg = Config(path="config/kitti.yaml").config()
