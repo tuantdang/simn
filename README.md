@@ -1,4 +1,4 @@
-# Bio-inpired Spatial Implicit Maps System for Navigation
+#  Bio-Inspired Hybrid Map: Spatial Implicit Local Frames and Topological Map for Mobile Cobot Nagivation
 
 ## Authors:
 - [Tuan Dang](www.tuandang.info)
