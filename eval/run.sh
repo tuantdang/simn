@@ -3,7 +3,7 @@
 dataset='rgbd_dataset_freiburg3_long_office_household'
 
 gt="/home/tuandang/workspace/datasets/tum/extract/${dataset}/groundtruth.txt"
-est="/home/tuandang/workspace/tnslam/log/tum/${dataset}/est.csv"
+est="/home/tuandang/workspace/simn/log/tum/${dataset}/est.csv"
 
 echo "Ground Truth: ${gt}"
 echo "Estimated   : ${est}"

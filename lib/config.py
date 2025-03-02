@@ -1,6 +1,5 @@
 
 
-# @File      config.py
 # @Author    Tuan Dang  
 # @Email    tuan.dang@uta.edu or dangthanhtuanit@gmail.com
 # Copyright (c) 2025 Tuan Dang, all rights reserved
