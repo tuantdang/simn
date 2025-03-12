@@ -8,14 +8,14 @@
 > University of Texas at Arlington, Arlington, TX 76013, USA.
 
 ## Astract
-Navigation is a fundamental capacity for mobile robots, enabling them to operate autonomously in complex and dynamic environments. Conventional approaches use probabilistic models to localize robots and build maps simultaneously using sensor observations. Recent approaches employ human-inspired learning, such as imitation and reinforcement learning, to navigate robots more effectively. However, these methods suffer from high computational costs, global map inconsistency, and poor generalization to unseen environments. This paper presents a novel method inspired by how humans perceive and navigate themselves effectively in novel environments. Specifically, we first build spatial-implicit local frames that mimic how humans represent essential spatial information in the short term. Then, we integrate spatial-implicit local frames into the global topological map represented as a factor graph. Lastly, we developed a novel navigation algorithm based on Rapid-Exploring Random Tree Star (RRT*) that leverages spatial-implicit maps and the topological map to navigate effectively in environments. Lastly, we conduct extensive experiments in real-world datasets and in-lab environments to validate our approach.
+Navigation is a fundamental capacity for mobile robots, enabling them to operate autonomously in complex and dynamic environments. Conventional approaches use probabilistic models to localize robots and build maps simultaneously using sensor observations. Recent approaches employ human-inspired learning, such as imitation and reinforcement learning, to navigate robots more effectively. However, these methods suffer from high computational costs, global map inconsistency, and poor generalization to unseen environments. This paper presents a novel method inspired by how humans perceive and navigate themselves effectively in novel environments. Specifically, we first build local frames that mimic how humans represent essential spatial information in the short term. Points in local frames are hybrid representations, including spatial information and learned features, so-called spatial-implicit local frames. Then, we integrate spatial-implicit local frames into the global topological map represented as a factor graph. Lastly, we developed a novel navigation algorithm based on Rapid-Exploring Random Tree Star (RRT*) that leverages spatial-implicit local frames and the topological map to navigate effectively in environments. To validate our approach, we conduct extensive experiments in real-world datasets and in-lab environments.
 
 # Overview
 <p align="center">
     <img src="images/overview.png"  width="640"/><br/>
 </p>
 
-### Full demo is available at [YouTube](https://youtu.be/tBR_HZLbYn4).
+### Full demo is available at [YouTube](https://youtu.be/GKoSBlGPD_s).
 <p align="center">
    <img src="images/simn.gif" width="600"/><br/>
    <!-- <i>Baxter is mounted with Intel RealSense D435i RGB-D</i> -->
