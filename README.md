@@ -66,3 +66,16 @@ https://github.com/IntelRealSense/librealsense/blob/development/doc/distribution
 ```
 pip install pyrealsense2
 ```
+
+## Citing
+
+```
+@inproceedings{dang2025bio,
+  title        = {Bio-Inspired Hybrid Map: Spatial Implicit Local Frames and Topological Map for Mobile Cobot Navigation},
+  author       = {Dang, Tuan and Huber, Manfred},
+  booktitle    = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year         = {2025},
+  month        = oct,
+  note         = {Presented October 2025},
+  url          = {https://arxiv.org/abs/2507.04649},
+}
